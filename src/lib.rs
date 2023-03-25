@@ -142,10 +142,9 @@ impl disassembler::DisassembleEnv for TestDisassembleEnv {
         Some(format!("/datum/type{}/data{}", tag, data).into_bytes())
     }
 }
-
+/*
 #[test]
 fn test_assemble() {
-    return;
     let nodes = parser::parse(
         r#"
 DbgFile "main.dm"
@@ -164,3 +163,4 @@ End
 
     println!("{}", format_disassembly(&nodes, Some(4)));
 }
+*/

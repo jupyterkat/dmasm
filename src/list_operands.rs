@@ -22,6 +22,7 @@ pub static BLOCK: u32 = 0x06;
 pub static CONTENTS: u32 = 0x05;
 
 bitflags! {
+    #[derive(Clone, Copy, Debug, PartialEq, Eq)]
     pub struct TypeFilter: u32 {
         const MOB = 0x01;
         const OBJ = 0x02;
